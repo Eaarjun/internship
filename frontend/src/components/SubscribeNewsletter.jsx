@@ -14,7 +14,7 @@ const SubscribeNewsletter = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     
-    fetch('http://localhost:3000/email',{
+    fetch('https://internship-indol.vercel.app//email',{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
