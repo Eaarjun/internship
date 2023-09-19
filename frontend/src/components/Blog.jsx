@@ -5,7 +5,7 @@ const Blog = () => {
   const [data, setData] = useState([]);
 
     const blogPost = () => {
-      fetch("https://internship-indol.vercel.app/")
+      fetch("https://travel-blog-5x6n.onrender.com/")
         .then((response) => {
           return response.json();
         })
