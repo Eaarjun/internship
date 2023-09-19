@@ -1,0 +1,29 @@
+.news-container{
+background-color: rgb(140, 185, 224);
+height: 20vh;
+}
+
+.newsletter{
+    text-align: center;
+    padding: 20px;
+}
+.newsletter input{
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding: 5px;
+}
+.newsletter input:hover{
+    font-size: 1.6rem;
+    border: 2.2px solid rgb(63, 63, 63);
+}
+button{
+    font-size: 1.5rem;
+    border:1px solid black;
+    padding: 5px;
+}
+button:hover{
+    font-size: 1.6rem;
+    border:2px solid black;
+    padding: 5px;
+    color: rgb(24, 204, 204);
+}

@@ -1,0 +1,29 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.heading{
+    text-align: center;
+
+}
+
+.flex-container{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-item{
+    padding: 10px;
+}
+
+.flex-item img {
+    width: 100%;
+    margin: 5px;
+ }
+
+ .flex-item p{
+    text-align: center;
+ }

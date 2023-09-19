@@ -1,0 +1,82 @@
+.active{
+    background-color: rgba(136, 135, 135, 0.795);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav p{
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+nav ul {
+    display: flex;
+
+}
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+nav ul li a:not(.active):hover{
+    color: lightslategray;
+}
+
+nav .menu{
+    display: none;
+    position: absolute;
+    top: 0.7rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+
+}
+
+nav .menu span{
+    height: 0.4rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.2rem;
+}
+
+@media (max-width:480px) {
+    logo{
+        width: 50%;
+    }
+    nav .menu{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+    nav ul.open{
+        display: flex;
+    }
+    nav ul li{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a{
+        margin: 0.2rem 0.5rem;
+    }
+}
+

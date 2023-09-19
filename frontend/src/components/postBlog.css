@@ -1,0 +1,33 @@
+.BlogForm{
+text-align: center;
+
+}
+label{
+    height: 200px;
+}
+.BlogForm .title{
+    width: 15%;
+    margin: 20px;
+    padding: 5px;
+}
+.BlogForm .content{
+    width: 15%;
+    height: 250px;
+    margin-bottom: 20px;
+    
+}
+.BlogForm .author{
+    width: 15%;
+    padding: 5px;
+}
+.BlogForm button{
+    font-size: 1rem;
+    padding: 9px;
+    margin: 10px;
+    background-color: rgb(63, 236, 193);
+    border: none;
+}
+.BlogForm button:hover{
+    background-color:rgb(79, 207, 79);
+    font-size: 1.5rem;
+}

@@ -1,0 +1,27 @@
+.heading{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.item h2{
+    text-align: center;
+}
+.item{
+    border: 2px solid black;
+    width: 33%;
+    margin: 3px;
+}
+.item:hover{
+    border: 3px solid rgb(63, 236, 193);
+}
+
+.item-set{
+    width: 100%;
+    height: auto;
+}
