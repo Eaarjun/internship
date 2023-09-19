@@ -14,7 +14,7 @@ const SubscribeNewsletter = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     
-    fetch('https://internship-indol.vercel.app//email',{
+    fetch('https://travel-blog-5x6n.onrender.com/email',{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
