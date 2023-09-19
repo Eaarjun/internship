@@ -13,7 +13,7 @@ const PostBlog = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3000", post)
+      .post("https://internship-indol.vercel.app/", post)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };
