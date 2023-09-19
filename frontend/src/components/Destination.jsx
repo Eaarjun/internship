@@ -7,7 +7,7 @@ import tokyo from "../images/tokyo.jpg"
 const Destination = () => {
   return (
     <>
-      <div className="heading">
+      <div className="heading" id="destination">
         <h1>Destination</h1>
       </div>
       {/* flex gallery  */}

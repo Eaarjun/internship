@@ -20,6 +20,8 @@ const PostBlog = () => {
 
   return (
     <>
+    <div className="postcontainer">
+
     <div className="BlogForm">
       <h1>Fill The form to post your data in the blog list</h1>
       <form onSubmit={submitHandler}>
@@ -33,15 +35,6 @@ const PostBlog = () => {
         />
  
         <br />
-        Content:
-        <textarea
-          type="text"
-          className="content"
-          placeholder="Content..."
-          onChange={handleInput}
-          name="content"
-        />
-        <br />
         Author:
         <input
           type="text"
@@ -50,10 +43,21 @@ const PostBlog = () => {
           onChange={handleInput}
           name="author"
         />
+        <h3>content</h3>
+        <textarea
+          type="text"
+          className="content"
+          placeholder="Content..."
+          onChange={handleInput}
+          name="content"
+        />
+        <br />
+       
         <br />
         <button>Submit</button>
         </label>
       </form>
+      </div>
       </div>
     </>
   );

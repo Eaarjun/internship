@@ -4,18 +4,21 @@
 
 .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
-    padding: 20px;
-
+    padding: 10px;
+    gap: 10px;
 }
 .item h2{
     text-align: center;
 }
 .item{
     border: 2px solid black;
-    width: 33%;
+    min-width: 300px;
+    max-width: 350px;
     margin: 3px;
+    padding: 10px;
+    
 }
 .item:hover{
     border: 3px solid rgb(63, 236, 193);
@@ -24,4 +27,14 @@
 .item-set{
     width: 100%;
     height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+        gap: 10px;
+    }
 }

@@ -19,7 +19,7 @@ const SubscribeNewsletter = () => {
       headers:{
         "Content-Type":"application/json"
       },
-      body:"email="+this.state.email
+      body:JSON.stringify(email)
     }) 
     .then((res)=> console.log(res))
 

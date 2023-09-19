@@ -19,10 +19,10 @@ const Blog = () => {
     });
   return (
     <>
-      <h1 className="heading">Blog</h1>
+      <h1 className="heading" id="blog">Blog</h1>
       <div className="container">
-        {data.map((e) => (
-          <div className="item">
+        {data.map((e,key) => (
+          <div className="item" key={key}>
             <h2>{e.title}</h2>
             <div className="item-set">
             <p>{e.content}</p>
