@@ -11,7 +11,9 @@ const EmailModel  = require('./schemas/EmailModel')
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 app.use(
-    cors()
+    cors({
+    origin:"https://travel-blog-5x6n.onrender.com/"
+    })
 )
 
 mongoose.connect(process.env['DB_URL'], { useNewUrlParser: true })
