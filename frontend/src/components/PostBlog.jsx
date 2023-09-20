@@ -13,7 +13,7 @@ const PostBlog = () => {
   const submitHandler = (e) => {
     e.preventDefault();
     axios
-      .post("https://internship-indol.vercel.app/", post)
+      .post("https://travel-blog-5x6n.onrender.com/", post)
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
   };
