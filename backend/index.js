@@ -18,7 +18,7 @@ app.use(
     })
 )
 
-mongoose.connect(mongodb+srv://admin:CTsoVT1hpVIjNNZX@cluster0.pocdklc.mongodb.net/, { useNewUrlParser: true })
+mongoose.connect('mongodb+srv://admin:CTsoVT1hpVIjNNZX@cluster0.pocdklc.mongodb.net', { useNewUrlParser: true })
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
