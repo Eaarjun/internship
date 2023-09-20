@@ -10,13 +10,7 @@ const EmailModel  = require('./schemas/EmailModel')
 //middleware express
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
-app.use(
-    cors({
-     origin:"*",
-        Access-Control-Allow-Origin:"*",
-      methods: "GET,POST,",
-    })
-)
+app.use(cors());
 
 mongoose.connect('mongodb+srv://admin:CTsoVT1hpVIjNNZX@cluster0.pocdklc.mongodb.net', { useNewUrlParser: true })
 
