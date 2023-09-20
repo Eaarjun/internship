@@ -5,7 +5,10 @@ const Blog = () => {
   const [data, setData] = useState([]);
 
     const blogPost = () => {
-      fetch("https://travel-blog-5x6n.onrender.com/")
+      fetch("https://travel-blog-5x6n.onrender.com/"),{
+        mode:"cors"
+      }
+      
         .then((response) => {
           return response.json();
         })
