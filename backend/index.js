@@ -38,6 +38,27 @@ app.post('/email',(req,res)=>{
     res.send()
 })
 
+// Define schema and model
+const ContinentSchema = new mongoose.Schema({
+  continent: String,
+  countrieslist: Array
+});
+
+const Continent = mongoose.model("Continent", ContinentSchema, "continents");
+
+// Define API route
+app.get("/continents", async (req, res) => {
+  try {
+    const data = await Continent.find();
+    res.json(data);
+  } catch (err) {
+    console.error("Fetch error:", err);
+    res.status(500).json({ error: "Failed to fetch continents" });
+  }
+});
+
+
+
 // const emailPost = new EmailModel({
 //     email:"a@b.com"
 // })
