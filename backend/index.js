@@ -77,7 +77,7 @@ app.post("/contact", async (req, res) => {
 app.post("/about", async (req, res) => {
   try {
     const { name, email, subject, message } = req.body;
-    const newAbout = new Contact({ name, email, subject, message });
+    const newAbout = new About({ name, email, subject, message });
     await newAbout.save();
     res.status(201).json({ message: "Form submitted successfully!" });
   } catch (error) {
@@ -100,9 +100,10 @@ app.get("/contact", async (req, res) => {
 });
 
 
+
 app.get("/about", async (req, res) => {
   try {
-    const aboutMessages = await Contact.find({ source: "about" }).sort({
+    const aboutMessages = await About.find({ source: "about" }).sort({
       createdAt: -1,
     });
     res.json(aboutMessages);
