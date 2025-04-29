@@ -85,3 +85,29 @@ app.post("/about", async (req, res) => {
     res.status(500).json({ message: "Form submission failed" });
   }
 });
+
+
+app.get("/contact", async (req, res) => {
+  try {
+    const contactMessages = await Contact.find({ source: "contact" }).sort({
+      createdAt: -1,
+    });
+    res.json(contactMessages);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Error fetching contact messages" });
+  }
+});
+
+
+app.get("/about", async (req, res) => {
+  try {
+    const aboutMessages = await Contact.find({ source: "about" }).sort({
+      createdAt: -1,
+    });
+    res.json(aboutMessages);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Error fetching about messages" });
+  }
+});
